@@ -1,0 +1,50 @@
+header.introduction {
+    text-align: center;
+    color: white;
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SM3pJjTqisbn4nt8/videoblocks-hi-tech-background-this-is-abstract-technological-animation-of-futuristic-grid-perfect-for-any-type-of-videos-dealing-with-scientific-festivals-hi-tech-projects-sci-fi-movies_huv-g4vzz_thumbnail-full01.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    @include background-cover;
+    .intro-text {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        .intro-lead-in {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 22px;
+            margin-bottom: 25px;
+            @include serif-font;
+        }
+        .intro-bigmessage{
+            color: $gray-500;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-bottom: 25px;    
+            @include heading-font;
+        }
+    }
+}
+@media(min-width:768px) {
+    header.introduction {
+        .intro-text {
+            padding-top: 300px;
+            padding-bottom: 200px;
+            .intro-lead-in {
+                font-size: 40px;
+                font-style: italic;
+                line-height: 40px;
+                margin-bottom: 25px;
+                @include serif-font;
+            }
+            .intro-heading {
+                font-size: 75px;
+                font-weight: 700;
+                line-height: 75px;
+                margin-bottom: 50px;
+                @include heading-font;
+            }
+        }
+    }
+}
